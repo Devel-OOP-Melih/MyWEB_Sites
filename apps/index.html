@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">
+                    <a href="#">
+                        <img src="im logo.jpg" alt="Logo" class="logo-img">
+                    </a>
+                </div>
+                <input type="checkbox" id="click">
+
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="#" style="--navAni:1" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" style="--navAni:2" onclick="showSection('about')">About</a></li>
+                    <li><a href="#" style="--navAni:3" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#" style="--navAni:4" onclick="showSection('portfolio')">Portfolio</a></li>
+                    <li><a href="#" style="--navAni:5" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-moon'></i>
+                </label>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Home Section -->
+            <div id="home" class="section active">
+                <div class="main">
+                    <div class="detail">
+                        <h3>Hi, I'm</h3>
+                        <h1><span style="color:#52489C;">İhsan Melih</span> DEMİRER</h1>
+                        <p>I am a student in the computer programming department.</p>
+                        <div class="social">
+                            <a href="https://www.youtube.com/@ihsanmeliih7726" style="--socialAni:1"><i
+                                    class='bx bxl-youtube'></i></a>
+                            <a href="https://www.instagram.com/ihsan.melih/" style="--socialAni:2"><i
+                                    class='bx bxl-instagram'></i></a>
+                            <a href="https://github.com/Devel-OOP-Melih" style="--socialAni:3"><i
+                                    class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/ihsan-melih-demirer-a13156267/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bda3vgl%2BCQmuK11rExi%2BGLw%3D%3D"
+                                style="--socialAni:4"><i class='bx bxl-linkedin'></i></a>
+
+                        </div>
+                    </div>
+                    <div class="images">
+                        <img src="images.png.jpg" alt="" class="img-w">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- About Section -->
+            <div id="about" class="section">
+                <div class="main">
+                    <div class="detail">
+                        <h3>About Me</h3>
+                        <h1><span style="color:#52489C;">İhsan Melih</span> DEMİRER</h1>
+                        <p
+                            style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                            In coding, I have built a solid foundation in languages ​​such as C#, JavaScript, HTML, and
+                            CSS. I am also proficient in TIA Portal in industrial automation and PLC programming. While
+                            developing these skills, I both reinforced my theoretical knowledge and found opportunities
+                            to apply them in practice.
+                            <br><br>
+                            While continuing my university education, I want to further deepen my technical knowledge
+                            and gain experience by taking part in new projects. My goal is to work in a position where I
+                            can run my own business or contribute to innovative projects after graduation. My enthusiasm
+                            for learning and developing leads me to build a successful career in the world of technology
+                            and software.
+                            <br><br>
+                            I'm always open to new opportunities and look forward to connecting with professionals in
+                            the technology world with whom we can grow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills-section">
+                <h2>My Skills</h2>
+                <div class="skill-images">
+                    <!-- CSS Logo -->
+                    <div class="skill-item">
+                        <img src="css.png" alt="CSS Logo" id="css-skill">
+                    </div>
+                    <!-- HTML Logo -->
+                    <div class="skill-item">
+                        <img src="html.png" alt="HTML Logo" id="html-skill">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal for CSS Info -->
+            <div id="cssModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="css-close">&times;</span>
+                    <h3 style="color: #52489C;">CSS Skills</h3>
+                    <p style="color:#000 ;">CSS (Cascading Style Sheets) is a language used to describe the presentation
+                        of a web page written in HTML or XML. It controls how elements are displayed on the screen, in
+                        print, or on other media. CSS allows you to separate content (HTML) from design, making it
+                        easier to maintain and update the style of multiple pages simultaneously.
+
+                        One of the most important features of CSS is its use of selectors to apply styles to specific
+                        elements. You can target elements by their tag name (e.g., p for paragraphs), class (e.g.,
+                        .button), or ID (e.g., #header). CSS also supports pseudo-classes like :hover, which applies a
+                        style when the user hovers over an element.
+
+                        CSS follows the box model, where each element is treated as a box with properties like margin,
+                        border, padding, and the content itself. Understanding this model is essential for positioning
+                        and spacing elements properly on a page.
+
+                        For layout control, CSS offers tools like Flexbox and Grid, which provide flexible and powerful
+                        ways to align and distribute space among elements. These tools make it easier to create complex
+                        layouts without relying on float-based hacks.
+
+                        Responsive design is another critical aspect of CSS, where media queries allow the design to
+                        adapt to different screen sizes and devices. This ensures that a website looks good on mobile
+                        phones, tablets, and desktops without creating separate code for each device.
+
+                        Overall, CSS is a core technology for web development, enabling developers to create visually
+                        appealing and responsive websites with ease.</p>
+                </div>
+            </div>
+
+            <!-- Modal for HTML Info -->
+            <div id="htmlModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="html-close">&times;</span>
+                    <h3 style="color: #52489C;">HTML Skills</h3>
+                    <p style="color: #000;">HTML (HyperText Markup Language) is the fundamental language used to create
+                        the structure of web pages. It organizes the content of a website, such as text, images, and
+                        links, into a logical format that browsers can display. Every webpage you visit is built using
+                        HTML, which acts as the backbone of the internet.
+
+                        HTML uses tags to define different types of content, like headings, paragraphs, and lists. These
+                        tags tell the browser how to display the information. For instance, headings are typically shown
+                        larger and bolder than regular text, helping to organize the page's content in a readable way.
+
+                        There are two main parts of an HTML document: the head and the body. The head contains
+                        information about the webpage that isn’t directly visible, such as the title (which appears on
+                        the browser tab) and metadata (which helps search engines understand the page). The body
+                        contains everything that users see on the webpage, such as text, images, links, and interactive
+                        forms.
+
+                        HTML is designed to be simple, which makes it easy for beginners to learn. Over the years, HTML
+                        has evolved to support multimedia elements, making it possible to embed videos, audio, and
+                        interactive content. Modern HTML also includes elements that help with accessibility, ensuring
+                        that websites can be used by people with different abilities.
+
+                        While HTML defines the structure of a webpage, it works together with CSS (for styling) and
+                        JavaScript (for interactive functionality). HTML provides the foundation, CSS controls how the
+                        page looks, and JavaScript handles dynamic behaviors like animations or user inputs. Together,
+                        these technologies form the core of web development.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Portfolio Section -->
+        <div id="portfolio" class="section">
+            <div class="section-images">
+                <div class="section-item"></div>
+                <div style="text-align: center;"><img src="portföy.png" alt="PORTFÖY Logo" id="portfolio"
+                        style="width: 45%; height: 45%; "></div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+        </div>
+        <h1>Contacts</h1>
+        <p>You can contact me at the addresses below.</p>
+        <div class="social">
+            <a href="https://www.youtube.com/@ihsanmeliih7726" style="--socialAni:1"><i class='bx bxl-youtube'></i></a>
+            <a href="https://www.instagram.com/ihsan.melih/" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/Devel-OOP-Melih" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/ihsan-melih-demirer-a13156267/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bda3vgl%2BCQmuK11rExi%2BGLw%3D%3D"
+                style="--socialAni:4"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to handle section switching
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Dark Mode Script
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+        // Modalları tanımla
+        var cssModal = document.getElementById("cssModal");
+        var htmlModal = document.getElementById("htmlModal");
+
+        // Resimlerin id'lerini tanımla
+        var cssBtn = document.getElementById("css-skill");
+        var htmlBtn = document.getElementById("html-skill");
+
+        // Modal kapatma butonlarını tanımla
+        var cssClose = document.getElementById("css-close");
+        var htmlClose = document.getElementById("html-close");
+
+        // CSS resmine tıklanınca CSS modalını aç
+        cssBtn.onclick = function () {
+            cssModal.style.display = "block";
+        }
+
+        // HTML resmine tıklanınca HTML modalını aç
+        htmlBtn.onclick = function () {
+            htmlModal.style.display = "block";
+        }
+
+        // CSS modalını kapat
+        cssClose.onclick = function () {
+            cssModal.style.display = "none";
+        }
+
+        // HTML modalını kapat
+        htmlClose.onclick = function () {
+            htmlModal.style.display = "none";
+        }
+
+        // Kullanıcı modal dışında bir yere tıklarsa modalı kapat
+        window.onclick = function (event) {
+            if (event.target == cssModal) {
+                cssModal.style.display = "none";
+            }
+            if (event.target == htmlModal) {
+                htmlModal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
